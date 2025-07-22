@@ -41,7 +41,7 @@ export default function ProductDetails() {
     <div className="py-4 coustom_container">
       <h1 className="text-2xl uppercase font-bold mb-4">{product.nameEn}</h1>
       <img  src={image ? image : product.image} alt={product.nameEn} className="rounded-lg w-80 h-80 object-cover mb-4" />
-      <div className="flex w-[360px] gap-2 items-center mb-3">
+      <div className="flex lg:w-[360px] w-full gap-2 items-center mb-3">
         {product.images.map((ele) => (
             <img  key={ele} onClick={() => switchImage(ele)} className={`${image === ele ? "border-blue-400" : "border-[#EEE]"} w-[100px]  border-[2px] cursor-pointer`} src = {ele} alt={product.name} title={product.name}/>
         ))}
