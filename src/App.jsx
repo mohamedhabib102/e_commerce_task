@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Navbar from './Components/Navbar';
 import ProductDetails from './Components/ProductDetails';
 import Cart from './pages/Cart';
-import Payment from './Components/payment';
+import Payment from './Components/PaymentMethod';
 
 
 
