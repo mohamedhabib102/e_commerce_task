@@ -4,7 +4,8 @@ import Home from './pages/Home';
 import Navbar from './Components/Navbar';
 import ProductDetails from './Components/ProductDetails';
 import Cart from './pages/Cart';
-import Payment from './Components/PaymentMethod';
+import PaymentMethod from './Components/PaymentMethod';
+
 
 
 
@@ -19,7 +20,7 @@ function App() {
         <Route path='/' element={<Home />}/>
         <Route path="/:id" element={<ProductDetails />} />
         <Route path='/cart' element={<Cart />}/>
-        <Route path='/cart/payemnt' element={<Payment />}/>
+        <Route path='/cart/payemnt' element={<PaymentMethod />}/>
       </Routes>
     </main>
     </>
