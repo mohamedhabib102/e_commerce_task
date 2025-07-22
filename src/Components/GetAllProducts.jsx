@@ -153,7 +153,7 @@ import { FaXmark } from "react-icons/fa6";
         >
          {message}
         </p>
-            <div className="flex justify-between items-center flex-row-reverse mb-4">
+            <div className="flex lg:justify-between md:justify-between justify-center gap-2 items-center flex-row-reverse mb-4 flex-wrap">
            <select
              value={sortOption}
              onChange={(e) => setSortOption(e.target.value)}
