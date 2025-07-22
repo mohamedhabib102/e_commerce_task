@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function Payment() {
+export default function PaymentMethod() {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
   const [message, setMessage] = useState("");
