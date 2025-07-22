@@ -215,7 +215,7 @@ import { FaXmark } from "react-icons/fa6";
           fetchSearchedProducts(value)
          }}
          />
-         <ul className="flex justify-center gap-3 mt-6 overflow-x-auto whitespace-nowrap px-3 scrollbar-hide">
+         <ul className="flex gap-3 mt-6 overflow-x-auto whitespace-nowrap px-3 scrollbar-hide">
           <li 
              onClick={() => {
               fetchProductsByCategory("All")
