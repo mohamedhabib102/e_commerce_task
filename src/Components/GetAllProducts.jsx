@@ -153,18 +153,18 @@ import { FaXmark } from "react-icons/fa6";
         >
          {message}
         </p>
-            <div className="flex justify-between items-center flex-row-reverse">
+            <div className="flex justify-between items-center flex-row-reverse mb-4">
            <select
              value={sortOption}
              onChange={(e) => setSortOption(e.target.value)}
-             className="border border-gray-300 px-5 py-3 rounded-lg z-40 focus:outline-blue-400  "
+             className="border border-gray-300 px-5 py-3 rounded-lg z-40 max-[991px]:px-1 focus:outline-blue-400  "
            >
              <option value="">Sort By Price</option>
              <option value="asc">Price: Low to High</option>
              <option value="desc">Price: High to Low</option>
            </select>
 
-           <button onClick={handelActiveFilter}  className={`transition  bg-blue-400 text-white px-5 py-3 rounded-xl cursor-pointer text-lg`}>Filter Of Price</button>
+           <button onClick={handelActiveFilter}  className={`transition  bg-blue-400 text-white px-5 max-[991px]:px-2 py-3 rounded-xl cursor-pointer text-lg`}>Filter Of Price</button>
         </div>
         <h1 className="text-center text-3xl font-semibold uppercase">O<span className="text-blue-400">ur Pr</span>oducts</h1>
 
