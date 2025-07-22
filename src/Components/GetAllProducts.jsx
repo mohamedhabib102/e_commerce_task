@@ -144,7 +144,7 @@ import { FaXmark } from "react-icons/fa6";
 
 
     return(
-      <section className="py-20 coustom_container text-center relative">
+      <section className="p-4 pb-20 coustom_container text-center relative">
         <p
           className={`  transition 
            fixed top-32 left-1/2 -translate-x-1/2 z-40 
@@ -153,21 +153,23 @@ import { FaXmark } from "react-icons/fa6";
         >
          {message}
         </p>
-        <h1 className="text-center text-3xl font-semibold uppercase">O<span className="text-blue-400">ur Pr</span>oducts</h1>
-
-         <div className="mt-6 flex justify-center">
+            <div className="flex justify-between items-center flex-row-reverse">
            <select
              value={sortOption}
              onChange={(e) => setSortOption(e.target.value)}
-             className="border border-gray-300 px-5 py-3 rounded-lg z-40 focus:outline-blue-400 fixed top-20 right-7"
+             className="border border-gray-300 px-5 py-3 rounded-lg z-40 focus:outline-blue-400  "
            >
              <option value="">Sort By Price</option>
              <option value="asc">Price: Low to High</option>
              <option value="desc">Price: High to Low</option>
            </select>
-        </div>
 
-         <button onClick={handelActiveFilter}  className={`transition fixed top-20 left-7 z-40 bg-blue-400 text-white px-5 py-3 rounded-xl cursor-pointer text-lg`}>Filter Of Price</button>
+           <button onClick={handelActiveFilter}  className={`transition  bg-blue-400 text-white px-5 py-3 rounded-xl cursor-pointer text-lg`}>Filter Of Price</button>
+        </div>
+        <h1 className="text-center text-3xl font-semibold uppercase">O<span className="text-blue-400">ur Pr</span>oducts</h1>
+
+
+         
          <div className={`${activeFilter ? "visible opacity-100" : "invisible opacity-0"} transition fixed bg-[#0000008a] w-full h-full left-0 top-0 z-20`}></div>
          <div className={`${activeFilter ? "visible opacity-100" : "invisible opacity-0"} lg:w-[65%] w-[95%] rounded-xl fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-[#EEE] py-16 px-8`}>
             <FaXmark onClick={handelActiveFilter} className="absolute top-4 right-4 transition hover:text-blue-400 cursor-pointer" size={30}/>
